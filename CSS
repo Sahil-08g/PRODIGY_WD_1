@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding-top: 60px; /* Space for fixed navbar */
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 0;
+}
+
+
+.logo {
+    height: 40px;
+}
+
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+
+#navbar a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
+#navbar a:hover,
+#navbar a:focus {
+    color: #ffd700; /* Gold color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background on hover */
+}
+
+
+#navbar a[aria-current="page"] {
+    color: #ffd700; /* Gold color for active page */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for active page */
+}
+
+
+.section {
+    padding: 60px 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.scrolled {
+    background-color: #222; /* Darker background color when scrolled */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Increased shadow on scroll */
+}
